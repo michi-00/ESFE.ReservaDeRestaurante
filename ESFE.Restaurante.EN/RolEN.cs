@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ESFE.Restaurante.EN
 {
-    internal class RolEN
+    public  class RolEN
     {
+        public int Id { get; set; }
+        public string NombreRol { get; set; }
+
     }
 }

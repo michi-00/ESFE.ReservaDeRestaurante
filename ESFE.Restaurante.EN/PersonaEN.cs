@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace ESFE.Restaurante.EN
 {
-    internal class PersonaEN
+    public abstract class PersonaEN
     {
+        private string _nombre;
+
+        public string Nombre
+        {
+            get { return _nombre; }
+            set { _nombre = value; }
+        }
+
+        public abstract string ObtenerInfo();
     }
 }

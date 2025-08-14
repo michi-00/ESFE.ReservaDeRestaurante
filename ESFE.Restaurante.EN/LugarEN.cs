@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ESFE.Restaurante.EN
 {
-    internal class LugarEN
+    public  class LugarEN
     {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Descripción { get; set; }
+
     }
 }

@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace ESFE.Restaurante.EN
 {
-    internal class CobroEN
+    public  class CobroEN
     {
+        public int Id { get; set; }
+        public DateTime Fecha { get; set; }
+        public decimal MontoTotal { get; set; }
+        public string MetodoPago { get; set; }
+        public int IdReserva { get; set; }
     }
 }

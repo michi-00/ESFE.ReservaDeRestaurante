@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3B9A364F-E954-48F1-AC88-0C4256CA7585}</ProjectGuid>
+    <ProjectGuid>{D7A6C96F-0E4B-49AA-8C3A-C1F78520F0E5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ESFE.Restaurante.BL</RootNamespace>
-    <AssemblyName>ESFE.Restaurante.BL</AssemblyName>
+    <RootNamespace>ESFE.Restaurante.DAL</RootNamespace>
+    <AssemblyName>ESFE.Restaurante.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,22 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClienteBL.cs" />
-    <Compile Include="CobroBL.cs" />
-    <Compile Include="EmpleadoBL.cs" />
-    <Compile Include="LugarBL.cs" />
-    <Compile Include="MenuBL.cs" />
-    <Compile Include="MesaBL.cs" />
+    <Compile Include="ClienteDAL.cs" />
+    <Compile Include="CobroDAL.cs" />
+    <Compile Include="ComunBD.cs" />
+    <Compile Include="EmpleadoDAL.cs" />
+    <Compile Include="LugarDAL.cs" />
+    <Compile Include="MenuDAL.cs" />
+    <Compile Include="MesaDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReservaBL.cs" />
-    <Compile Include="RolBL.cs" />
-    <Compile Include="UsuarioBL.cs" />
+    <Compile Include="ReservaDAL.cs" />
+    <Compile Include="RolDAL.cs" />
+    <Compile Include="UsuarioDAL.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ESFE.Restaurante.DAL\ESFE.RestauranteDAL.csproj">
-      <Project>{d7a6c96f-0e4b-49aa-8c3a-c1f78520f0e5}</Project>
-      <Name>ESFE.RestauranteDAL</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\ESFE.Restaurante.EN\ESFE.Restaurante.EN.csproj">
       <Project>{7aa03df3-4e7c-4cdb-b860-d06258395706}</Project>
       <Name>ESFE.Restaurante.EN</Name>
