@@ -1,0 +1,203 @@
+﻿<Window x:Class="ESFE.Restaurante.UI.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ESFE.Restaurante.UI"
+        mc:Ignorable="d"
+        Title="Login" Height="573" Width="482">
+    <Window.Resources>
+        <DataTemplate x:Key="ComboBoxItemTemplate1">
+            <Grid/>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+
+
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFD09120" Offset="1"/>
+                <GradientStop Color="#FFFDE857" Offset="0.038"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Label x:Name="lblRestaurante" Content=" RESTAURANT" HorizontalAlignment="Left" Height="54" Margin="106,58,0,0" VerticalAlignment="Top" Width="262" FontFamily="Harrington" FontSize="36" Foreground="White"/>
+        <Label x:Name="lblNombre" Content="User" HorizontalAlignment="Left" Height="31" Margin="150,127,0,0" VerticalAlignment="Top" Width="190" Foreground="#FF736C6C" FontFamily="Cooper Black" FontSize="14" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="29" Margin="150,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" Grid.ColumnSpan="2"/>
+        <Image x:Name="pbPassword" Width="30" Height="30" Source="/ojo.png" MouseDown="pbPassword_Click"   Margin="317,249,135,278"/>
+
+        <Label x:Name="lblContraseña" Content="Password"  HorizontalAlignment="Left" Height="27" Margin="150,210,0,0" VerticalAlignment="Top" Width="148" FontFamily="Cooper Black" Foreground="#FF695E5E" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblRol" Content="Rol" HorizontalAlignment="Left" Height="28" Margin="150,309,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.522,0.484" FontFamily="Cooper Black" Foreground="#FF5D5353" Grid.ColumnSpan="2"/>
+        <ComboBox ItemTemplate="{DynamicResource ComboBoxItemTemplate1}" x:Name="cbRol" HorizontalAlignment="Left" Height="28" Margin="150,337,0,0" VerticalAlignment="Top" Width="168" Cursor="No" IsEditable="True">
+            <ComboBoxItem IsSelected="True">
+                <ComboBoxItem.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FFB59A9A" Offset="1"/>
+                    </LinearGradientBrush>
+                </ComboBoxItem.Background>
+            </ComboBoxItem>
+            <ComboBoxItem Content="Administrador"/>
+            <ComboBoxItem Content="Empleado"/>
+        </ComboBox>
+        <Button x:Name="btnAcceder" Content="ACCEDER" HorizontalAlignment="Left" Height="48" Margin="130,380,0,0" VerticalAlignment="Top" Width="202" Foreground="#FF584E4E" FontFamily="Arial Black" Click="btnAcceder_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFC3EA48" Offset="1"/>
+                    <GradientStop Color="#FF3FE661" Offset="0.042"/>
+                    <GradientStop Color="#FF3FE661" Offset="0.149"/>
+                    <GradientStop Color="#FFA6E94D" Offset="1"/>
+                    <GradientStop Color="#FFA6E94D" Offset="1"/>
+                    <GradientStop Color="#FFB1E94A" Offset="0.606"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="41" Margin="52,378,0,0" VerticalAlignment="Top" Width="36" Source="/copa-de-vino.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="51" Margin="31,386,0,0" VerticalAlignment="Top" Width="38" Source="/copa-de-vino.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.096"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="156" Margin="-3,453,0,0" VerticalAlignment="Top" Width="159" Source="/cesped.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-360.038"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="164" Margin="132,456,0,0" VerticalAlignment="Top" Width="151" Source="/cesped.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-359.659"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="158" Margin="350,0,0,-50" VerticalAlignment="Bottom" Width="151" Source="/cesped.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-360.264"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="143" Margin="226,461,0,0" VerticalAlignment="Top" Width="157" Source="/cesped.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-360.425"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="28" Margin="78,131,0,0" VerticalAlignment="Top" Width="28" Source="/copa-de-vino.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="41" Margin="64,143,0,0" VerticalAlignment="Top" Width="28" Source="/copa-de-vino.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.096"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="28" Margin="376,336,0,0" VerticalAlignment="Top" Width="28" Source="/copa-de-vino.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="41" Margin="362,348,0,0" VerticalAlignment="Top" Width="28" Source="/copa-de-vino.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.096"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="41" Margin="389,40,0,0" VerticalAlignment="Top" Width="36" Source="/copa-de-vino.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="51" Margin="368,48,0,0" VerticalAlignment="Top" Width="38" Source="/copa-de-vino.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.096"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="140" Margin="343,423,0,0" VerticalAlignment="Top" Width="179" Source="/salteado-de-huevo-con-tomate.png"/>
+        <Image HorizontalAlignment="Left" Height="46" Margin="0,247,0,0" VerticalAlignment="Top" Width="44" Source="/burbujas (1).png"/>
+        <Image HorizontalAlignment="Left" Height="33" Margin="37,465,0,0" VerticalAlignment="Top" Width="33" Source="/burbujas (1).png"/>
+        <Image HorizontalAlignment="Left" Height="94" Margin="424,99,0,0" VerticalAlignment="Top" Width="59" Source="/burbujas (1).png"/>
+        <Image HorizontalAlignment="Left" Height="37" Margin="37,52,0,0" VerticalAlignment="Top" Width="33" Source="/burbujas (1).png"/>
+        <Image HorizontalAlignment="Left" Height="27" Margin="407,0,0,0" VerticalAlignment="Center" Width="29" Source="/burbujas (1).png"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="454,408,0,0" VerticalAlignment="Top" Width="29" Source="/burbujas (1).png"/>
+        <PasswordBox x:Name="txtClave"  HorizontalAlignment="Left" Height="26" Margin="150,253,0,0"  VerticalAlignment="Top" Width="162" PasswordChar="*" RenderTransformOrigin="0.5,0.5" MaxLength="4">
+            <PasswordBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="2"/>
+                </TransformGroup>
+            </PasswordBox.RenderTransform>
+        </PasswordBox>
+        <Button x:Name="btnCerrar" Content="CERRAR" HorizontalAlignment="Left" Height="23" Margin="204,433,0,0" VerticalAlignment="Top" Width="55" Click="btnCerrar_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFDEA6A"/>
+                    <GradientStop Color="#FFE68686" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <!-- Caja de texto visible, pero oculta inicialmente-->
+
+
+    </Grid>
+</Window>

@@ -64,6 +64,18 @@
     <Compile Include="CRUDCliente.xaml.cs">
       <DependentUpon>CRUDCliente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CRUDEmpleado.xaml.cs">
+      <DependentUpon>CRUDEmpleado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InicioEmpleado.xaml.cs">
+      <DependentUpon>InicioEmpleado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MENU.xaml.cs">
+      <DependentUpon>MENU.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -94,6 +106,68 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CRUDEmpleado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InicioEmpleado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MENU.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ojo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ojo %281%29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ESFE.Restaurante.BL\ESFE.Restaurante.BL.csproj">
+      <Project>{3b9a364f-e954-48f1-ac88-0c4256ca7585}</Project>
+      <Name>ESFE.Restaurante.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ESFE.Restaurante.EN\ESFE.Restaurante.EN.csproj">
+      <Project>{7aa03df3-4e7c-4cdb-b860-d06258395706}</Project>
+      <Name>ESFE.Restaurante.EN</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="copa-de-vino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cesped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="burbujas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hoja-de-palma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="salteado-de-huevo-con-tomate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="guirnalda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="burbujas %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="flecha-hacia-abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="izquierda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
